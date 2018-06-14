@@ -17,7 +17,7 @@ We usually user tanh in hidden layers for it is more balance and use sigmoid as 
 the 2-type classfication problems.
 
 relu:
-
+![image](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)#/media/File:Rectifier_and_softplus_functions.svg）
 The gradient of relu will never die when the input value is positive, however if the input is negative value, 
 the gradient and output of relu will always be 0. 
 The central of relu is not 0.
