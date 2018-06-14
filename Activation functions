@@ -1,0 +1,26 @@
+Sigmoid：
+
+f(x)=1/1+e^(−x)
+the output should be either 1 or 0
+disadvantage: the model may lose gradient when its valus is very large or small
+the averge value of sigmoid is not 0, so there might be some bias, if the number of layers is large, the bias may be obvious.
+
+
+tanh:
+
+tanh(x)=2sigmoid(2x)−1
+The model may lose gradient when its valus is very large or small (the gradient cannot be clearly observed when
+the value is large.
+The better place for tanh than Sigmoid is that the central of tanh is 0 (it takes -1 0 1) so models trained under
+tanh is more banlanced than Sigmoid.
+We usually user tanh in hidden layers for it is more balance and use sigmoid as the output layer for we usually handle 
+the 2-type classfication problems.
+
+relu:
+
+The gradient of relu will never die when the input value is positive, however if the input is negative value, 
+the gradient and output of relu will always be 0. 
+The central of relu is not 0.
+
+elu：
+
